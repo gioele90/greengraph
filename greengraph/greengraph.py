@@ -4,6 +4,14 @@ import requests
 from io import BytesIO as StringIO
 from matplotlib import image as img
 from matplotlib import pyplot as plt
+from argparse import ArgumentParser
+if __name__ == "__main__":
+    parser = ArgumentParser
+    parser.add_argument('--from')
+    parser.add_argument('--to')
+    parser.add_argument('--steps')
+    parser.add_argument('--out')
+    arguments= parser.parse_args()
 class Greengraph(object):
     def __init__(self, start, end):
         self.start=start
@@ -42,3 +50,8 @@ class Map(object):
         buffer = StringIO()
         result = img.imsave(buffer, out, format='png')
         return buffer.getvalue()
+mygraph=Greengraph(arguments.from,arguments.to)
+data = mygraph.green_between(arguments.steps)
+fig=plt.plot(data)
+fig.savefig(arguments.out)
+plt.close(fig)
