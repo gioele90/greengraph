@@ -1,0 +1,8 @@
+README.txt
+setup.py
+greengraph.egg-info/PKG-INFO
+greengraph.egg-info/SOURCES.txt
+greengraph.egg-info/dependency_links.txt
+greengraph.egg-info/entry_points.txt
+greengraph.egg-info/requires.txt
+greengraph.egg-info/top_level.txt

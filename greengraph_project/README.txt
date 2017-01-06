@@ -1,0 +1,35 @@
+GREENGRAPH 0.1
+==============
+
+This software uses the geopy library to get satellite images of a number of locations,
+counts the number of green pixels in each of them and produces the corresponding graph.
+The graph gives an rough estimate of how the amount of greenland changes from one place
+to another.
+
+INSTALLATION
+------------
+
+To install the program, move to the greengraph_project folder with the terminal or Command
+Prompt and run the code
+
+python setup.py install
+
+On Mac/Linux root access might be required, in which case do
+
+sudo python setup.py install
+
+On Windows the Command Prompt should be opened with administrator privileges.
+
+RUN THE PROGRAM
+---------------
+
+The appropriate invocation to run this program is:
+
+python -m greengraph --start [START] --stop [STOP] --steps [STEPS] --out [OUT]
+
+where [START] is the name of the initial location (such as New York), [STOP] is the final
+location, [STEPS] is the number of steps between start and stop and [OUT] is the name of
+the output picture.
+
+The original classes on which this project is based come from http://development.rc.ucl.ac.uk/training/engineering/
+ch01data/110Capstone.html

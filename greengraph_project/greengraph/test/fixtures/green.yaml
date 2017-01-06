@@ -1,0 +1,27 @@
+- location: London
+  coord: [51.5073509, -0.1277583]
+  result:
+    - [ True, True,  True,  True,  True]
+    - [ True, True,  True,  True,  True]
+    - [ True, True,  True,  True,  True]
+    - [ True, True,  True,  True,  True]
+    - [ True, True,  True,  True,  True]
+  count: 25
+- location: Tokio
+  coord: [35.6894875, 139.6917064]
+  result:
+    - [ True,  True,  True,  True,  True]
+    - [ True,  True,  True,  True,  True]
+    - [ True,  True,  True,  True,  True]
+    - [ True,  True,  True,  True,  True]
+    - [ True,  True,  True,  True, False]
+  count: 24
+- location: Rome
+  coord: [41.9027835, 12.4963655]
+  result:
+    - [False, False, False, False, False]
+    - [False, False, False, False, False]
+    - [False, False, False, False, False]
+    - [False, False, False, False, False]
+    - [False, False, False, False, False]
+  count: 0
